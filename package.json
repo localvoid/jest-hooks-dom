@@ -13,6 +13,9 @@
     "test:debug": "node --inspect-brk ./node_modules/.bin/jest --runInBand",
     "test:coverage": "jest --coverage"
   },
+  "dependencies": {
+    "jest-hooks": "^0.1.0"
+  },
   "devDependencies": {
     "@types/jest": "^25.2.1",
     "@types/node": "^13.13.5",

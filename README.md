@@ -10,9 +10,29 @@
 ### Elements
 
 `useHTMLElement(element, container)` creates a new HTML element before each test and optionally mounts it to the
-container. After each test HTML element is removed from any container.
+container. After each test HTML element is removed from container.
 
-`useSVGElement(element, container)` creates a new SVG element.
+`useSVGElement(element, container)` creates a new SVG element before each test and optionally mounts it to the
+container. After each test SVG element is removed from container.
+
+`useHTMLTemplate(html, container)` create a new HTML from template before each test and optionally mounts it to the
+container. After each test all root nodes are removed from container.
+
+```js
+const t = useHTMLTemplate(`
+  <div>
+    <span id="a">A</span>
+    <span id="b">B</span>
+  </div>
+`);
+
+describe("template", () => {
+  it("should find all nodes by id", () => {
+    expect(t.a.textContent).toBe("A");
+    expect(t.b.textContent).toBe("B");
+  });
+});
+```
 
 ### Mutation Tracking
 
