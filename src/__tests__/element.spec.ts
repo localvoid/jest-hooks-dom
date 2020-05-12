@@ -1,3 +1,4 @@
+import { describe, it, expect } from "@jest/globals";
 import { useHTMLElement } from "../element";
 
 const a = useHTMLElement("div");
@@ -11,10 +12,6 @@ describe("element", () => {
 
     it("b should be a span element", () => {
       expect(b().tagName).toBe("SPAN");
-    });
-
-    it("a should be a child of document.body", () => {
-      expect(document.body.firstChild).toBe(a());
     });
 
     it("b should be a child of a", () => {
