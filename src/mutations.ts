@@ -85,7 +85,7 @@ export function useDOMMutationTracker() {
     nodeSetNodeValue,
     elementSetInnerHTML,
 
-    stats() {
+    get stats() {
       return {
         documentCreateElement: documentCreateElement.mock.calls.length,
         documentCreateElementNS: documentCreateElementNS.mock.calls.length,

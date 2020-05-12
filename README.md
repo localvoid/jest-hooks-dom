@@ -51,6 +51,26 @@ Methods and properties tracked:
  - `Node.prototype.nodeValue`
  - `Element.prototype.innerHTML`
 
+```js
+import { useModule } from "jest-hooks";
+import { useResetDOM, useHTMLElement, useDOMMutationTracker } from "jest-hooks-dom";
+
+useResetDOM();
+const root = useHTMLElement();
+const mutations = useDOMMutationTracker();
+const ivi = useModule("ivi");
+const r = (op: Op) => ivi.render(op, root());
+
+describe("fragment", () => {
+  describe("mount", () => {
+    test("[]", () => {
+      r([]);
+      expect(mutations.stats).toMatchSnapshot();
+    });
+  });
+});
+```
+
 ### Events
 
 `useResetDOMEventListeners()` tracks all unregistered event listeners and automatically removes them after each test.
