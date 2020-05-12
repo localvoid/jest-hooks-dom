@@ -14,7 +14,7 @@
  */
 export function useHTMLElement<T extends HTMLElement>(
   element: T | string = "div",
-  container: () => Element = () => document.body,
+  container?: () => Element,
 ): () => T {
   let e: T;
 
@@ -50,7 +50,7 @@ export function useHTMLElement<T extends HTMLElement>(
  */
 export function useSVGElement<T extends SVGElement>(
   element: T | string = "svg",
-  container: () => Element = () => document.body,
+  container?: () => Element,
 ): () => T {
   let e: T;
 
