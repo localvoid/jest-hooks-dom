@@ -2474,6 +2474,11 @@ jest-haste-map@^26.0.1:
   optionalDependencies:
     fsevents "^2.1.2"
 
+jest-hooks@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/jest-hooks/-/jest-hooks-0.1.0.tgz#cb842783e229c0e3c1787ca4250eb71de6e4df0a"
+  integrity sha512-Ycqa1Je+OOc/kjDGka0EAP8hI70q/53gzh5mN5NHoYKdBVpNH7H8zsRCJ93xcBC/I7u8D0bmYyCoOHE/HRlgcg==
+
 jest-jasmine2@^26.0.1:
   version "26.0.1"
   resolved "https://registry.yarnpkg.com/jest-jasmine2/-/jest-jasmine2-26.0.1.tgz#947c40ee816636ba23112af3206d6fa7b23c1c1c"
@@ -2986,9 +2991,9 @@ minimatch@^3.0.4:
     brace-expansion "^1.1.7"
 
 minimist@^1.1.1, minimist@^1.2.0, minimist@^1.2.5:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
-  integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
+  integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
 
 mixin-deep@^1.2.0:
   version "1.3.2"
